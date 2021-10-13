@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Accueil"
+    android:id="@+id/mainHome"
+    android:background="#A8E0FB">
+
+
+    <LinearLayout
+        android:id="@+id/mainmenu"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBGPrimary"
+        android:orientation="vertical"
+        android:translationX="-280dp">
+
+
+        <TextView
+            android:id="@+id/appNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="GESTION BUDGÉTAIRE"
+            android:textColor="#F6FF00"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/membres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bgbtnmenu"
+            android:gravity="left"
+            android:text="Membres"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/addDepense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bgbtnmenu"
+            android:gravity="left"
+            android:text="Ajouter les dépenses"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/modifyDepense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bgbtnmenu"
+            android:gravity="left"
+            android:text="Modifier les dépenses"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/deleteDepense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bgbtnmenu"
+            android:gravity="left"
+            android:text="Supprimer les dépenses"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/depensePieGraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bgbtnmenu"
+            android:gravity="left"
+            android:text="Graphe de dépenses"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/depenseRadarGraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bgbtnmenu"
+            android:gravity="left"
+            android:text="Graphe radar de dépenses"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+
+        <Button
+            android:id="@+id/titreDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bgbtnmenu"
+            android:gravity="left"
+            android:text="Détails de budget"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/closeApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bgbtnmenu"
+            android:gravity="left"
+            android:text="Fermer"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/maincontent"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:background="#A8E0FB"
+        android:translationX="-280dp">
+
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            app:srcCompat="@drawable/back1"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="238dp" />
+
+        <Button
+            android:id="@+id/btnmenu"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/ic_menu_black" />
+
+        <TextView
+            android:id="@+id/titreHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="La gestion de votre budget est sur..."
+            android:textColor="#181C34"
+            android:textSize="27dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/titreDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="185dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="Gestion Budgétaire de ma famille"
+            android:textColor="#181C34"
+            android:textSize="25dp"
+            android:textStyle="normal" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
